@@ -117,6 +117,27 @@ The previously empty font selection menu should now contain the available system
 
 Open a score and verify that musical notation displays correctly.
 
+### Important: Launch the patched copy, not the original Sibelius!
+
+This patcher **does NOT modify your original `/Applications/Sibelius.app`**.
+
+Instead, it creates a separate patched application:
+
+`/Applications/Sibelius-FontFix-Test.app`
+
+**You must launch this new application to use the font fix.**
+
+```bash
+open /Applications/Sibelius-FontFix-Test.app
+```
+
+If you launch the original Sibelius from its existing Dock icon or Applications folder, the missing-font problem will still be present.
+
+You can add the patched application to your Dock for convenient access.
+
+Your original Sibelius installation remains unchanged and can be used as a backup.
+
+
 ## Restoring the original library
 
 To restore the original QtGui within the test application:
